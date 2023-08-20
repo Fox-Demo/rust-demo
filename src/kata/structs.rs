@@ -1,5 +1,6 @@
-#[derive(Debug)]
+//If you want print struct or enums, you need to use the Debug lint to print entirely
 
+#[derive(Debug)]
 struct Person {
     name: String,
     age: i32,
@@ -14,6 +15,7 @@ impl Person {
         }
     }
 
+    //Constructor
     pub fn adult(name: String, age: i32) -> Self {
         Self { name, age }
     }

@@ -1,9 +1,8 @@
-mod enums;
-//mod structs;
-
-use crate::enums::get_enum;
-//use crate::structs::structs_kata;
+#[allow(dead_code)]
+mod kata;
+use crate::kata::structs::structs_kata;
+//Note Binary crate
 
 fn main() {
-    get_enum();
+    structs_kata();
 }
