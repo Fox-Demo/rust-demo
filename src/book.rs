@@ -1,5 +1,6 @@
+#[allow(dead_code)]
 //note 這邊整個是 kata 模組
-
+pub mod collections;
 pub mod enums;
 pub mod structs;
 
@@ -20,6 +21,9 @@ mod customer {
 
     //note 這邊使用相對路徑，所以需要先用 super 回到 kata module
     use super::front_of_house::hosting;
+
+    //note inner module 也一樣在 customer 裡面，因此如果要用 inner 不用 super
+
     use inner::innerFn;
 
     pub fn eat_at_restaurant() {

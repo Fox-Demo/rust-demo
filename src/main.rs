@@ -1,8 +1,8 @@
 #[allow(dead_code)]
-mod kata;
-use crate::kata::structs::structs_kata;
+mod book;
+use crate::book::collections::enum_vector;
 //Note Binary crate
 
 fn main() {
-    structs_kata();
+    enum_vector();
 }
