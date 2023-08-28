@@ -1,8 +1,9 @@
 #[allow(dead_code)]
 mod book;
-use crate::book::collections::enum_vector;
+
+use crate::book::collections::collection_exercise2;
 //Note Binary crate
 
 fn main() {
-    enum_vector();
+    collection_exercise2();
 }

@@ -19,6 +19,10 @@ impl Person {
     pub fn adult(name: String, age: i32) -> Self {
         Self { name, age }
     }
+
+    pub fn hello_person(&self) {
+        println!("Person name is {}", self.name);
+    }
 }
 
 pub fn structs_kata() {
@@ -31,9 +35,10 @@ pub fn structs_kata() {
     borrow_struct(&jack);
     println!("jack is {:?}", jack);
 
-    let a: Person = Person::adult(String::from("No"), 13);
+    let a: Person = Person::adult(String::from("Jack"), 13);
     println!("a is {:?}", a);
-    println!("a is a adult? -> {}", a.is_adult())
+    println!("a is a adult? -> {}", a.is_adult());
+    a.hello_person();
 }
 
 fn borrow_struct(p: &Person) {
