@@ -2,6 +2,7 @@
 //note 這邊整個是 kata 模組
 pub mod collections;
 pub mod enums;
+pub mod error;
 pub mod structs;
 
 mod front_of_house {

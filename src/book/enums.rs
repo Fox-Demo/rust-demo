@@ -56,11 +56,20 @@ pub fn get_enum() {
 
     //Option
     let option_x: Option<i32> = Some(5);
-    if let Some(x) = option_x {
-        println!("x is {}", x);
-    } else {
-        println!("x is None");
-    }
+
+    // if let Some(x) = option_x {
+    //     println!("x is {}", x);
+    // } else {
+    //     println!("x is None");
+    // }
+
+    // Return 回來給 result 的資料型別需要一樣
+    let result = match option_x {
+        Some(n) => n,
+        None => 0,
+    };
+
+    println!("{}", result);
 
     println!("Get {:?}", option_x);
 }
