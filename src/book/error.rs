@@ -3,6 +3,23 @@
 use std::io::{self, Read};
 use std::{fs::File, io::ErrorKind};
 
+struct Guess {
+    value: i32,
+}
+
+impl Guess {
+    fn new(value: i32) -> Self {
+        if value < 0 || value > 100 {
+            panic!("Invalid value");
+        }
+        Guess { value }
+    }
+
+    fn value(&self) -> i32 {
+        self.value
+    }
+}
+
 pub fn get_panic() -> i32 {
     let v = vec![1, 2, 3];
     v[99] // Cause panic error
@@ -67,4 +84,10 @@ fn read_username_from_file() -> Result<String, io::Error> {
     File::open("hello.txt")?.read_to_string(&mut username)?;
 
     Ok(username)
+}
+
+pub fn get_guess() {
+    let guess = Guess::new(30);
+    let invalid_guess = Guess::new(-1);
+    println!("{}", guess.value());
 }

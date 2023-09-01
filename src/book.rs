@@ -3,6 +3,7 @@
 pub mod collections;
 pub mod enums;
 pub mod error;
+pub mod generic;
 pub mod structs;
 
 mod front_of_house {

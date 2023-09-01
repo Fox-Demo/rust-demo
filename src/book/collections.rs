@@ -141,7 +141,8 @@ pub fn collection_exercise() {
 
     let mut results = HashMap::new();
     for n in &numbers {
-        let count = results.entry(*n).or_insert(0);
+        let count = results.entry(*n).or_insert(0); // 如果沒有 key: n 項的話就插入 0
+                                                    // 返回一個 ref mut 型別的 value
         *count += 1;
     }
 
