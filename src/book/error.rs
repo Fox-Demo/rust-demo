@@ -89,5 +89,6 @@ fn read_username_from_file() -> Result<String, io::Error> {
 pub fn get_guess() {
     let guess = Guess::new(30);
     let invalid_guess = Guess::new(-1);
+
     println!("{}", guess.value());
 }

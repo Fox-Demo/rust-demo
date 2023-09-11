@@ -4,7 +4,9 @@ pub mod collections;
 pub mod enums;
 pub mod error;
 pub mod generic;
+pub mod lifetime;
 pub mod structs;
+pub mod traits;
 
 mod front_of_house {
     pub mod hosting {

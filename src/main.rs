@@ -1,9 +1,10 @@
 #[allow(dead_code)]
 mod book;
+mod katas;
 
-use crate::book::generic::largest;
+use crate::book::lifetime::lifetime1;
 //Note Binary crate
 
 fn main() {
-    largest();
+    lifetime1();
 }
