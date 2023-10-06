@@ -78,7 +78,9 @@ pub fn largest() {
 pub fn generic_struct() {
     let point_i32 = Point { x: 1, y: 2 };
     let point_f64 = Point { x: 4.0, y: 2.0 };
+
     point_f64.print_msg();
+
     println!("i32 of x => {}", point_i32.x());
     println!("f64 of x => {}", point_f64.x());
     // let point_error = Point { x: 1, y: 2.0 };s
