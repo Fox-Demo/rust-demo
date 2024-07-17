@@ -1,10 +1,3 @@
-#[allow(dead_code)]
-mod book;
-mod katas;
+use rust_demo::book::closure;
 
-use crate::book::lifetime::lifetime1;
-//Note Binary crate
-
-fn main() {
-    lifetime1();
-}
+fn main() {}
